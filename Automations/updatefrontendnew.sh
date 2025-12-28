@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ipv4_address=$(hostname -I | awk '{print $1}')
+ipv4_address=$(curl ipinfo.io/ip)
 
 file_to_find="../frontend/.env.docker"
 

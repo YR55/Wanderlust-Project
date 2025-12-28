@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # VM ka current IP auto-detect:
-ipv4_address=$(hostname -I | awk '{print $1}')
+ipv4_address=$(curl ipinfo.io/ip)
 
 file_to_find="../backend/.env.docker"
 
