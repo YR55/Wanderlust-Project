@@ -4,15 +4,16 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable", "WebWorker"],
+
     "module": "ESNext",
-    "skipLibCheck": true,
+    "moduleResolution": "bundler",
     "types": ["node"],
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -25,10 +26,17 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    //silents: ts-jest[config] (WARN) message TS151001
-    //More: https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
-    "esModuleInterop": true
+    /* 
+      Silences ts-jest warning: TS151001
+      More info:
+      https://blogs.msdn.microsoft.com/typescript/2018/01/31/
+      announcing-typescript-2-7/#easier-ecmascript-module-interoperability
+    */
+    "esModuleInterop": true,
+
+    "skipLibCheck": true
   },
+
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
