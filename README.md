@@ -6,10 +6,10 @@ This project focuses on **real-world deployment workflows**, CI/CD automation, c
 ![Preview Image](./Assets/Wanderlust-App.png)
 #
 
-🔗 **Frontend (Live UI)**  
+🔗 **Frontend (Live-UI)**  
 https://wanderlust.yogdev.tech/
 
-🔗 **Backend (Live API)**  
+🔗 **Backend (Live-API)**  
 https://wanderlust-project-demo-srwr.onrender.com
 
 ---
