@@ -27,7 +27,7 @@ app.use('/api/posts', postsRouter);
 app.use('/api/auth', authRouter);
 
 app.get('/', (req, res) => {
-  res.send('Wow! Backend of Wanderlust app is, now accessible.');
+  res.send('Wow! Backend of Wanderlust app is, now accessible and Ok!.');
 });
 
 app.listen(port, () => {
